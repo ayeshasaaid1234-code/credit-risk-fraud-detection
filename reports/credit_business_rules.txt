@@ -1,0 +1,46 @@
+|--- credit_score <= -0.23
+|   |--- credit_score <= -0.67
+|   |   |--- num_late_payments <= 0.27
+|   |   |   |--- credit_history_years <= 0.91
+|   |   |   |   |--- class: 1
+|   |   |   |--- credit_history_years >  0.91
+|   |   |   |   |--- class: 1
+|   |   |--- num_late_payments >  0.27
+|   |   |   |--- credit_utilization_ratio <= -1.02
+|   |   |   |   |--- class: 0
+|   |   |   |--- credit_utilization_ratio >  -1.02
+|   |   |   |   |--- class: 1
+|   |--- credit_score >  -0.67
+|   |   |--- num_late_payments <= -0.64
+|   |   |   |--- credit_history_years <= 0.33
+|   |   |   |   |--- class: 1
+|   |   |   |--- credit_history_years >  0.33
+|   |   |   |   |--- class: 0
+|   |   |--- num_late_payments >  -0.64
+|   |   |   |--- credit_history_years <= 0.10
+|   |   |   |   |--- class: 1
+|   |   |   |--- credit_history_years >  0.10
+|   |   |   |   |--- class: 1
+|--- credit_score >  -0.23
+|   |--- num_late_payments <= 0.27
+|   |   |--- credit_score <= 0.84
+|   |   |   |--- credit_history_years <= -0.13
+|   |   |   |   |--- class: 0
+|   |   |   |--- credit_history_years >  -0.13
+|   |   |   |   |--- class: 0
+|   |   |--- credit_score >  0.84
+|   |   |   |--- existing_debt <= 1.99
+|   |   |   |   |--- class: 0
+|   |   |   |--- existing_debt >  1.99
+|   |   |   |   |--- class: 0
+|   |--- num_late_payments >  0.27
+|   |   |--- credit_score <= 0.86
+|   |   |   |--- income_stability <= 0.29
+|   |   |   |   |--- class: 1
+|   |   |   |--- income_stability >  0.29
+|   |   |   |   |--- class: 0
+|   |   |--- credit_score >  0.86
+|   |   |   |--- num_late_payments <= 2.99
+|   |   |   |   |--- class: 0
+|   |   |   |--- num_late_payments >  2.99
+|   |   |   |   |--- class: 1

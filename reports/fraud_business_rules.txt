@@ -1,0 +1,46 @@
+|--- distance_from_home <= 0.27
+|   |--- amount <= 1.42
+|   |   |--- composite_risk_flag <= 0.19
+|   |   |   |--- distance_from_home <= -0.28
+|   |   |   |   |--- class: 0
+|   |   |   |--- distance_from_home >  -0.28
+|   |   |   |   |--- class: 0
+|   |   |--- composite_risk_flag >  0.19
+|   |   |   |--- composite_risk_flag <= 2.02
+|   |   |   |   |--- class: 0
+|   |   |   |--- composite_risk_flag >  2.02
+|   |   |   |   |--- class: 1
+|   |--- amount >  1.42
+|   |   |--- amount <= 3.20
+|   |   |   |--- composite_risk_flag <= 0.19
+|   |   |   |   |--- class: 1
+|   |   |   |--- composite_risk_flag >  0.19
+|   |   |   |   |--- class: 1
+|   |   |--- amount >  3.20
+|   |   |   |--- amount <= 4.66
+|   |   |   |   |--- class: 1
+|   |   |   |--- amount >  4.66
+|   |   |   |   |--- class: 1
+|--- distance_from_home >  0.27
+|   |--- composite_risk_flag <= 0.19
+|   |   |--- amount <= 0.60
+|   |   |   |--- distance_from_home <= 1.60
+|   |   |   |   |--- class: 0
+|   |   |   |--- distance_from_home >  1.60
+|   |   |   |   |--- class: 1
+|   |   |--- amount >  0.60
+|   |   |   |--- amount <= 1.91
+|   |   |   |   |--- class: 1
+|   |   |   |--- amount >  1.91
+|   |   |   |   |--- class: 1
+|   |--- composite_risk_flag >  0.19
+|   |   |--- distance_from_home <= 1.13
+|   |   |   |--- amount <= 0.35
+|   |   |   |   |--- class: 1
+|   |   |   |--- amount >  0.35
+|   |   |   |   |--- class: 1
+|   |   |--- distance_from_home >  1.13
+|   |   |   |--- location_anomaly <= 1.36
+|   |   |   |   |--- class: 1
+|   |   |   |--- location_anomaly >  1.36
+|   |   |   |   |--- class: 1
